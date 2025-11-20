@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1 {
+    color: #444;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#searchBtn {
+    display: block;
+    margin: 0 auto 20px ;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+}
+
+#search-button:hover {
+    background-color: #4cae4c;
+}
+
+#result{
+    margin-top: 20px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    min-height: 50px;
+}
+
+p{
+    font-size: 18px;
+}
