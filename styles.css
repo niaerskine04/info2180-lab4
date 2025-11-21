@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -18,6 +18,14 @@ h1 {
     text-align: center;
 }
 
+.search-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
 #searchBtn {
     display: block;
     margin: 0 auto 20px ;
@@ -46,4 +54,117 @@ h1 {
 
 p{
     font-size: 18px;
+} */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Soft pastel background */
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background: linear-gradient(135deg, #ffeaf6, #e4f1ff);
+    color: #444;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+/* Main header */
+h1 {
+    text-align: center;
+    color: #555;
+    font-size: 2.4rem;
+    margin-bottom: 25px;
+    font-weight: 600;
+    text-shadow: 1px 1px 0 #fff;
+}
+
+/* Search Section */
+.search-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    padding: 12px 14px;
+    width: 400px;
+    border: 2px solid #f7ccec;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+    background: #fff;
+    transition: 0.3s;
+}
+
+#searchInput:focus {
+    border-color: #f08cc0;
+    box-shadow: 0px 0px 8px rgba(240, 140, 192, 0.4);
+}
+
+/* Cute button */
+#searchBtn {
+    padding: 12px 18px;
+    margin-left: 10px;
+    background-color: #ff9ecb;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+    box-shadow: 0px 4px 8px rgba(255, 158, 203, 0.4);
+}
+
+#searchBtn:hover {
+    background-color: #ff7db9;
+    transform: scale(1.03);
+}
+
+/* Results Box */
+#result {
+    background: white;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 25px;
+    min-height: 80px;
+    border-radius: 15px;
+    border: 2px solid #ffe0f2;
+    box-shadow: 0px 4px 12px rgba(200, 150, 255, 0.2);
+    text-align: center;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Result text */
+#result h3 {
+    font-size: 1.8rem;
+    color: #ff7db9;
+}
+
+#result h4 {
+    font-size: 1.3rem;
+    color: #777;
+    margin-top: 5px;
+}
+
+#result p {
+    font-size: 1rem;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
